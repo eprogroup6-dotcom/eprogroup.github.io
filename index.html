@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PimeFreelancere | Premier Data Analysis & BI</title>
+    <title>PimeFreelancere | Strategic Data Analysis & Corporate BI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -13,24 +13,15 @@
             100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
         }
         .animate-online { animation: pulse-green 2s infinite; }
-        
-        /* Slider Animation */
-        @keyframes slide {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
-        }
-        .testimonial-track {
-            display: flex;
-            width: calc(250px * 10);
-            animation: slide 30s linear infinite;
-        }
+        @keyframes slide { 0% { transform: translateX(0); } 100% { transform: translateX(-100%); } }
+        .testimonial-track { display: flex; width: calc(300px * 10); animation: slide 40s linear infinite; }
         .testimonial-track:hover { animation-play-state: paused; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans leading-relaxed">
 
     <div class="bg-slate-900 text-white py-2 px-8 text-xs flex justify-between items-center border-b border-blue-500/30">
-        <div class="flex gap-4">
+        <div class="flex flex-wrap gap-4">
             <span><i class="fas fa-map-marker-alt text-blue-400 mr-2"></i>3326 Kenyatta Street, Wabwire House, No. 32, Nairobi</span>
             <span><i class="fas fa-phone text-green-400 mr-2"></i>+254 794489623</span>
         </div>
@@ -39,20 +30,14 @@
         </div>
     </div>
 
-    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 py-4 px-8 flex justify-between items-center">
+    <nav class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50 py-4 px-8 flex justify-between items-center">
         <span class="font-bold text-2xl tracking-tight text-slate-900">
             Pime<span class="text-blue-600">Freelancere</span>
         </span>
-        <div class="space-x-8 text-sm font-semibold text-slate-600 hidden md:flex items-center">
-            <div class="flex items-center gap-2 mr-4">
-                <span class="relative flex h-3 w-3">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-                </span>
-                <span class="text-xs font-bold text-green-600 uppercase">Live & Online</span>
-            </div>
-            <a href="#portfolio" class="hover:text-blue-600 transition">Technical Portfolio</a>
-            <a href="mailto:primefreelers582@gmail.com" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition shadow-lg">Work With Me</a>
+        <div class="space-x-8 text-sm font-semibold text-slate-600 hidden lg:flex items-center">
+            <a href="#about" class="hover:text-blue-600 transition">Expertise</a>
+            <a href="#portfolio" class="hover:text-blue-600 transition">Case Studies</a>
+            <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition shadow-lg">Inquire Now</a>
         </div>
     </nav>
 
@@ -62,7 +47,7 @@
                 <img src="sharon-profile.png" alt="Sharon Chebet" class="rounded-3xl shadow-2xl border-4 border-white/10 w-full aspect-[4/5] object-cover">
                 <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3">
                     <span class="h-4 w-4 bg-green-500 rounded-full animate-online border-2 border-white"></span>
-                    <span class="text-slate-900 font-bold text-sm uppercase tracking-tighter">Verified Expert</span>
+                    <span class="text-slate-900 font-bold text-sm uppercase tracking-tighter">Verified Consultant</span>
                 </div>
             </div>
             <div class="md:w-2/3 text-center md:text-left">
@@ -70,28 +55,92 @@
                     <h1 class="text-6xl font-extrabold tracking-tight leading-tight">Sharon Chebet</h1>
                     <span class="text-green-400 text-4xl"><i class="fas fa-certificate relative"><i class="fas fa-check absolute inset-0 flex items-center justify-center text-[14px] text-slate-900"></i></i></span>
                 </div>
-                <p class="text-2xl font-light mb-8 text-blue-200">Founder, PimeFreelancere | Data Scientist</p>
+                <h2 class="text-2xl font-light mb-6 text-blue-200">Transforming Complex Data into Competitive Advantage</h2>
+                <p class="text-lg opacity-80 mb-10">Providing specialized analytical support for organizations in Finance, Healthcare, and Retail. I bridge the gap between technical raw data and executive decision-making.</p>
                 
-                <div class="bg-white/5 border border-white/10 p-6 rounded-2xl mb-10 inline-block w-full">
-                    <p class="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">Core Analysis Software Stack</p>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl"><i class="fab fa-python text-yellow-400"></i> Python</div>
-                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl"><i class="fas fa-code text-blue-400"></i> R Studio</div>
-                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl"><i class="fas fa-calculator text-red-400"></i> SPSS</div>
-                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl"><i class="fas fa-file-excel text-green-400"></i> Excel</div>
-                    </div>
-                </div>
-
-                <div class="flex gap-6 justify-center md:justify-start text-slate-300">
-                    <div class="flex flex-col"><span class="text-white font-bold text-xl uppercase">MySQL</span><span class="text-[10px]">Architecture</span></div>
-                    <div class="w-px h-10 bg-white/20"></div>
-                    <div class="flex flex-col"><span class="text-white font-bold text-xl uppercase">Tableau</span><span class="text-[10px]">BI Insights</span></div>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm mb-10">
+                    <div class="flex flex-col border-l-2 border-blue-500 pl-4"><span class="font-bold text-xl uppercase tracking-tighter">Python</span><span class="text-[10px] text-blue-300 uppercase">Automation</span></div>
+                    <div class="flex flex-col border-l-2 border-blue-500 pl-4"><span class="font-bold text-xl uppercase tracking-tighter">SPSS</span><span class="text-[10px] text-blue-300 uppercase">Statistics</span></div>
+                    <div class="flex flex-col border-l-2 border-blue-500 pl-4"><span class="font-bold text-xl uppercase tracking-tighter">MySQL</span><span class="text-[10px] text-blue-300 uppercase">Architecture</span></div>
+                    <div class="flex flex-col border-l-2 border-blue-500 pl-4"><span class="font-bold text-xl uppercase tracking-tighter">Tableau</span><span class="text-[10px] text-blue-300 uppercase">Reporting</span></div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="py-12 bg-white overflow-hidden border-b border-slate-100">
+    <section id="about" class="py-24 px-10 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-blue-600 font-bold uppercase tracking-widest text-sm mb-4">Why Partner With PimeFreelancere?</h2>
+            <h3 class="text-4xl font-bold mb-10 text-slate-900">Data-Driven Excellence for Modern Organizations</h3>
+            <div class="grid md:grid-cols-2 gap-12 text-slate-600 leading-relaxed">
+                <p>Most organizations possess vast amounts of data but lack the specialized infrastructure to extract its value. At <strong>PimeFreelancere</strong>, I provide the missing link. My expertise isn't just in running scripts; it's in understanding your business goals and creating the logic needed to achieve them.</p>
+                <p>I specialize in <strong>clean-room data processing</strong>, ensuring that every insight you receive is accurate, reproducible, and actionable. Whether it's migrating a legacy database to a modern MySQL schema or performing advanced statistical modeling in R and SPSS, my focus is on 100% data integrity.</p>
+            </div>
+            
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+                    <i class="fas fa-shield-alt text-blue-600 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2 text-slate-900">Data Security</h4>
+                    <p class="text-sm">Confidentiality and strict data governance protocols on all organizational projects.</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+                    <i class="fas fa-tachometer-alt text-blue-600 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2 text-slate-900">Optimized Performance</h4>
+                    <p class="text-sm">Database schemas designed for speed, ensuring rapid retrieval even with million-row datasets.</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100">
+                    <i class="fas fa-eye text-blue-600 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-lg mb-2 text-slate-900">Executive Clarity</h4>
+                    <p class="text-sm">Complex findings translated into clear, visual Tableau dashboards for C-suite reviews.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-24 px-10 bg-slate-100">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4 text-slate-800">Operational Success Stories</h2>
+            <p class="text-center text-slate-500 mb-16">See how PimeFreelancere solves real-world data challenges.</p>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-2xl group border border-slate-200">
+                    <img src="mysql-schema.png" alt="MySQL Schema" class="w-full h-80 object-cover group-hover:scale-105 transition duration-700">
+                    <div class="p-10">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-blue-600 font-bold text-xs uppercase tracking-widest">Database Architecture</span>
+                            <span class="bg-green-100 text-green-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase italic">Completed</span>
+                        </div>
+                        <h4 class="font-bold text-2xl text-slate-900 mb-4">Supply Chain Optimization Schema</h4>
+                        <p class="text-slate-600 mb-6 text-sm">A complete architectural overhaul of a multi-branch retail database. We normalized raw sales data into a 3NF MySQL schema, reducing storage costs by 30% and enabling real-time inventory tracking across all Nairobi locations.</p>
+                        <ul class="text-xs space-y-2 text-slate-500 font-medium">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Entity Relationship Diagram (ERD)</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Query Optimization & Indexing</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Data Migration & Integrity Checks</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl overflow-hidden shadow-2xl group border border-slate-200">
+                    <img src="tableau-insights.png" alt="Tableau Dashboard" class="w-full h-80 object-cover group-hover:scale-105 transition duration-700">
+                    <div class="p-10">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-orange-600 font-bold text-xs uppercase tracking-widest">Business Intelligence</span>
+                            <span class="bg-green-100 text-green-700 text-[10px] font-bold px-3 py-1 rounded-full uppercase italic">Completed</span>
+                        </div>
+                        <h4 class="font-bold text-2xl text-slate-900 mb-4">Executive Market Insight Dashboard</h4>
+                        <p class="text-slate-600 mb-6 text-sm">Converted a decade of messy CSV data into a high-impact Tableau dashboard. This project enabled the management team to identify a 15% hidden drop in customer retention and pivot their strategy within a single business quarter.</p>
+                        <ul class="text-xs space-y-2 text-slate-500 font-medium">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Python (Pandas) Data Cleaning</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Interactive KPI Visualizations</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Automated Weekly Reporting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white overflow-hidden border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-10 mb-8 flex items-center justify-between">
             <h3 class="text-sm font-bold uppercase tracking-[0.2em] text-slate-400">Client Satisfaction Feedbacks</h3>
             <span class="text-xs text-blue-600 font-bold">5.0 Star Rated Engagement ★★★★★</span>
@@ -99,71 +148,49 @@
         <div class="testimonial-container relative">
             <div class="testimonial-track gap-8 px-10">
                 <div class="flex-shrink-0 w-80 bg-slate-50 p-6 rounded-2xl border border-slate-200">
-                    <p class="text-slate-600 italic text-sm mb-4">"The MySQL schema PimeFreelancere built for our warehouse was flawless. Highly professional."</p>
-                    <p class="font-bold text-slate-900 text-xs">— Supply Chain Manager, Nairobi</p>
+                    <p class="text-slate-600 italic text-sm mb-4">"PimeFreelancere delivered our SPSS results ahead of schedule. Highly accurate."</p>
+                    <p class="font-bold text-slate-900 text-xs">— Research Director, Kenya</p>
                 </div>
                 <div class="flex-shrink-0 w-80 bg-slate-50 p-6 rounded-2xl border border-slate-200">
-                    <p class="text-slate-600 italic text-sm mb-4">"Excellent Python automation. Saved us 20+ hours of manual data entry every week!"</p>
-                    <p class="font-bold text-slate-900 text-xs">— FinTech Startup Founder</p>
+                    <p class="text-slate-600 italic text-sm mb-4">"The MySQL overhaul Sharon performed was life-changing for our admin team."</p>
+                    <p class="font-bold text-slate-900 text-xs">— Ops Manager, Retail Group</p>
                 </div>
                 <div class="flex-shrink-0 w-80 bg-slate-50 p-6 rounded-2xl border border-slate-200">
-                    <p class="text-slate-600 italic text-sm mb-4">"Our Tableau dashboards are now board-room ready. Sharon is a BI wizard."</p>
-                    <p class="font-bold text-slate-900 text-xs">— NGO Director</p>
-                </div>
-                <div class="flex-shrink-0 w-80 bg-slate-50 p-6 rounded-2xl border border-slate-200">
-                    <p class="text-slate-600 italic text-sm mb-4">"Exceptional SPSS analysis for our market research project. Very clear reporting."</p>
-                    <p class="font-bold text-slate-900 text-xs">— Research Lead</p>
+                    <p class="text-slate-600 italic text-sm mb-4">"Sharon's Python scripts automated three days of work into three seconds."</p>
+                    <p class="font-bold text-slate-900 text-xs">— Data Analyst Lead</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="portfolio" class="py-24 px-10 bg-slate-50">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-16 text-slate-800 underline decoration-blue-600 decoration-4 underline-offset-8">Featured Work & Assets</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-200 group hover:border-blue-500 transition-colors">
-                    <img src="mysql-schema.png" alt="MySQL" class="w-full h-80 object-cover grayscale hover:grayscale-0 transition duration-700">
-                    <div class="p-8"><h4 class="font-bold text-2xl mb-2">Relational Database Design</h4><p class="text-slate-500 text-sm italic">MySQL / PostgreSQL Systems</p></div>
-                </div>
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-200 group hover:border-blue-500 transition-colors">
-                    <img src="tableau-insights.png" alt="Tableau" class="w-full h-80 object-cover grayscale hover:grayscale-0 transition duration-700">
-                    <div class="p-8"><h4 class="font-bold text-2xl mb-2">Advanced BI Visualization</h4><p class="text-slate-500 text-sm italic">Tableau / Excel Dashboards</p></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-slate-900 text-white pt-24 pb-12 px-10 border-t-8 border-blue-600">
+    <footer id="contact" class="bg-slate-900 text-white pt-24 pb-12 px-10 border-t-8 border-blue-600 text-center md:text-left">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 mb-20">
             <div>
-                <h2 class="text-4xl font-bold mb-6">PimeFreelancere</h2>
-                <p class="text-slate-400 text-lg mb-8 leading-relaxed">Providing high-end analytical services for global organizations. Expert in MySQL, Tableau, and high-level statistical computing.</p>
-                <div class="flex gap-4">
-                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-linkedin-in text-sm"></i></a>
-                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-github text-sm"></i></a>
+                <h2 class="text-4xl font-bold mb-6 text-white">Pime<span class="text-blue-500">Freelancere</span></h2>
+                <p class="text-slate-400 text-lg mb-8">Ready to bring clarity to your organizational data? PimeFreelancere is currently accepting new consulting contracts for 2024.</p>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="tel:+254794489623" class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-xl text-sm font-bold transition">Call Support</a>
+                    <a href="mailto:primefreelers582@gmail.com" class="bg-white/10 hover:bg-white/20 px-6 py-3 rounded-xl text-sm font-bold transition">Email Brief</a>
                 </div>
             </div>
-            <div class="space-y-6">
-                <h3 class="text-xl font-bold text-blue-400">Contact Official</h3>
-                <div class="space-y-4">
-                    <div class="flex items-start gap-4">
-                        <i class="fas fa-map-marker-alt mt-1 text-slate-500"></i>
-                        <div><p class="font-bold">Headquarters</p><p class="text-slate-400 text-sm leading-6">3326 Kenyatta Street, Wabwire House,<br>No. 32 Nairobi, Kenya</p></div>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <i class="fas fa-phone mt-1 text-slate-500"></i>
-                        <div><p class="font-bold">Phone Support</p><a href="tel:+254794489623" class="text-blue-400 text-sm">+254 794 489 623</a></div>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <i class="fas fa-envelope mt-1 text-slate-500"></i>
-                        <div><p class="font-bold">Business Email</p><a href="mailto:primefreelers582@gmail.com" class="text-blue-400 text-sm">primefreelers582@gmail.com</a></div>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-blue-500 font-bold uppercase tracking-widest text-xs mb-4 text-center md:text-left">Location & Contact</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-center md:justify-start gap-4">
+                            <i class="fas fa-map-marker-alt text-slate-500"></i>
+                            <span class="text-slate-300 text-sm">3326 Kenyatta Street, Wabwire House, No. 32, Nairobi</span>
+                        </div>
+                        <div class="flex items-center justify-center md:justify-start gap-4">
+                            <i class="fas fa-phone text-slate-500"></i>
+                            <span class="text-slate-300 text-sm">+254 794 489 623</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="text-center pt-12 border-t border-white/10 text-slate-600 text-[10px] uppercase tracking-widest">
-            &copy; 2024 PimeFreelancere | Authorized Data Consultancy Nairobi
+        <div class="text-center pt-12 border-t border-white/5 text-slate-600 text-[10px] uppercase tracking-widest font-bold">
+            &copy; 2024 PimeFreelancere | Authorized Data Consultancy Nairobi | Sharon Chebet
         </div>
     </footer>
 
