@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PimeFreelancere | Data Analyst & BI Expert</title>
+    <title>PimeFreelancere | Premier Data Analysis & BI</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -13,11 +13,33 @@
             100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
         }
         .animate-online { animation: pulse-green 2s infinite; }
+        
+        /* Slider Animation */
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        .testimonial-track {
+            display: flex;
+            width: calc(250px * 10);
+            animation: slide 30s linear infinite;
+        }
+        .testimonial-track:hover { animation-play-state: paused; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-sans leading-relaxed">
 
-    <nav class="bg-white shadow-md sticky top-0 z-50 py-4 px-8 flex justify-between items-center border-b border-blue-100">
+    <div class="bg-slate-900 text-white py-2 px-8 text-xs flex justify-between items-center border-b border-blue-500/30">
+        <div class="flex gap-4">
+            <span><i class="fas fa-map-marker-alt text-blue-400 mr-2"></i>3326 Kenyatta Street, Wabwire House, No. 32, Nairobi</span>
+            <span><i class="fas fa-phone text-green-400 mr-2"></i>+254 794489623</span>
+        </div>
+        <div class="hidden md:block">
+            <i class="fas fa-envelope text-blue-400 mr-2"></i>primefreelers582@gmail.com
+        </div>
+    </div>
+
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 py-4 px-8 flex justify-between items-center">
         <span class="font-bold text-2xl tracking-tight text-slate-900">
             Pime<span class="text-blue-600">Freelancere</span>
         </span>
@@ -27,87 +49,122 @@
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                 </span>
-                <span class="text-xs font-bold text-green-600 uppercase">Online Now</span>
+                <span class="text-xs font-bold text-green-600 uppercase">Live & Online</span>
             </div>
-            <a href="#portfolio" class="hover:text-blue-600 transition">Portfolio</a>
-            <a href="mailto:your.email@example.com" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">Contact Me</a>
+            <a href="#portfolio" class="hover:text-blue-600 transition">Technical Portfolio</a>
+            <a href="mailto:primefreelers582@gmail.com" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition shadow-lg">Work With Me</a>
         </div>
     </nav>
 
-    <header class="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white py-28 px-10">
+    <header class="bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950 text-white py-24 px-10">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
-            <div class="md:w-1/3 flex justify-center relative">
-                <div class="relative">
-                    <img src="sharon-profile.png" alt="Sharon Chebet" class="rounded-2xl shadow-2xl border-4 border-white/10 w-72 h-80 object-cover">
-                    <div class="absolute -top-3 -right-3 bg-slate-800 border-2 border-white p-2 rounded-xl flex items-center gap-2 shadow-xl">
-                        <span class="h-3 w-3 bg-green-500 rounded-full animate-online"></span>
-                        <span class="text-[10px] font-bold uppercase tracking-tighter">Available</span>
-                    </div>
+            <div class="md:w-1/3 relative">
+                <img src="sharon-profile.png" alt="Sharon Chebet" class="rounded-3xl shadow-2xl border-4 border-white/10 w-full aspect-[4/5] object-cover">
+                <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl flex items-center gap-3">
+                    <span class="h-4 w-4 bg-green-500 rounded-full animate-online border-2 border-white"></span>
+                    <span class="text-slate-900 font-bold text-sm uppercase tracking-tighter">Verified Expert</span>
                 </div>
             </div>
             <div class="md:w-2/3 text-center md:text-left">
-                <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
-                    <h1 class="text-5xl font-extrabold tracking-tight">Sharon Chebet</h1>
-                    <span class="text-green-400 text-3xl" title="Verified Expert">
-                        <i class="fas fa-certificate relative">
-                            <i class="fas fa-check absolute inset-0 flex items-center justify-center text-[12px] text-slate-900"></i>
-                        </i>
-                    </span>
+                <div class="flex items-center justify-center md:justify-start gap-4 mb-4">
+                    <h1 class="text-6xl font-extrabold tracking-tight leading-tight">Sharon Chebet</h1>
+                    <span class="text-green-400 text-4xl"><i class="fas fa-certificate relative"><i class="fas fa-check absolute inset-0 flex items-center justify-center text-[14px] text-slate-900"></i></i></span>
                 </div>
-                <p class="text-2xl font-light mb-8 text-blue-200 italic">Founder of PimeFreelancere | Senior Data Analyst</p>
-                <p class="text-xl opacity-90 leading-relaxed mb-10 max-w-2xl">
-                    High-performance data architecture and business intelligence solutions. 
-                    I help organizations turn raw data into strategic assets.
-                </p>
-                <div class="flex flex-wrap gap-4 justify-center md:justify-start text-sm">
-                    <span class="bg-white/10 px-4 py-2 rounded-lg border border-white/20 hover:bg-white/20 transition cursor-default">
-                        <i class="fas fa-check-circle text-green-400 mr-2"></i>Verified MySQL Architect
-                    </span>
-                    <span class="bg-white/10 px-4 py-2 rounded-lg border border-white/20 hover:bg-white/20 transition cursor-default">
-                        <i class="fas fa-check-circle text-green-400 mr-2"></i>Tableau Certified
-                    </span>
+                <p class="text-2xl font-light mb-8 text-blue-200">Founder, PimeFreelancere | Data Scientist</p>
+                
+                <div class="bg-white/5 border border-white/10 p-6 rounded-2xl mb-10 inline-block w-full">
+                    <p class="text-xs font-bold text-blue-400 uppercase tracking-widest mb-4">Core Analysis Software Stack</p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl"><i class="fab fa-python text-yellow-400"></i> Python</div>
+                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl"><i class="fas fa-code text-blue-400"></i> R Studio</div>
+                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl"><i class="fas fa-calculator text-red-400"></i> SPSS</div>
+                        <div class="flex items-center gap-3 bg-white/10 p-3 rounded-xl"><i class="fas fa-file-excel text-green-400"></i> Excel</div>
+                    </div>
+                </div>
+
+                <div class="flex gap-6 justify-center md:justify-start text-slate-300">
+                    <div class="flex flex-col"><span class="text-white font-bold text-xl uppercase">MySQL</span><span class="text-[10px]">Architecture</span></div>
+                    <div class="w-px h-10 bg-white/20"></div>
+                    <div class="flex flex-col"><span class="text-white font-bold text-xl uppercase">Tableau</span><span class="text-[10px]">BI Insights</span></div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="portfolio" class="bg-slate-50 py-24 px-10">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl font-bold text-center mb-16 text-slate-800">Featured Technical Work</h2>
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-100 group">
-                    <div class="relative overflow-hidden">
-                        <img src="mysql-schema.png" alt="MySQL Schema" class="w-full h-72 object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-4 left-4 bg-blue-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Database Design</div>
-                    </div>
-                    <div class="p-8">
-                        <h4 class="font-bold text-2xl text-slate-800 mb-3">Enterprise Schema Optimization</h4>
-                        <p class="text-slate-600">Complex relational mapping designed for 100% data accuracy and fast retrieval.</p>
-                    </div>
+    <section class="py-12 bg-white overflow-hidden border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-10 mb-8 flex items-center justify-between">
+            <h3 class="text-sm font-bold uppercase tracking-[0.2em] text-slate-400">Client Satisfaction Feedbacks</h3>
+            <span class="text-xs text-blue-600 font-bold">5.0 Star Rated Engagement ★★★★★</span>
+        </div>
+        <div class="testimonial-container relative">
+            <div class="testimonial-track gap-8 px-10">
+                <div class="flex-shrink-0 w-80 bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <p class="text-slate-600 italic text-sm mb-4">"The MySQL schema PimeFreelancere built for our warehouse was flawless. Highly professional."</p>
+                    <p class="font-bold text-slate-900 text-xs">— Supply Chain Manager, Nairobi</p>
                 </div>
-
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-100 group">
-                    <div class="relative overflow-hidden">
-                        <img src="tableau-insights.png" alt="Tableau Dashboard" class="w-full h-72 object-cover group-hover:scale-110 transition duration-500">
-                        <div class="absolute top-4 left-4 bg-orange-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Visual BI</div>
-                    </div>
-                    <div class="p-8">
-                        <h4 class="font-bold text-2xl text-slate-800 mb-3">Tableau Strategic Insights</h4>
-                        <p class="text-slate-600">Converting Python-processed data into visual board-ready narratives.</p>
-                    </div>
+                <div class="flex-shrink-0 w-80 bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <p class="text-slate-600 italic text-sm mb-4">"Excellent Python automation. Saved us 20+ hours of manual data entry every week!"</p>
+                    <p class="font-bold text-slate-900 text-xs">— FinTech Startup Founder</p>
+                </div>
+                <div class="flex-shrink-0 w-80 bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <p class="text-slate-600 italic text-sm mb-4">"Our Tableau dashboards are now board-room ready. Sharon is a BI wizard."</p>
+                    <p class="font-bold text-slate-900 text-xs">— NGO Director</p>
+                </div>
+                <div class="flex-shrink-0 w-80 bg-slate-50 p-6 rounded-2xl border border-slate-200">
+                    <p class="text-slate-600 italic text-sm mb-4">"Exceptional SPSS analysis for our market research project. Very clear reporting."</p>
+                    <p class="font-bold text-slate-900 text-xs">— Research Lead</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-slate-900 text-white py-16 text-center border-t-4 border-green-500">
-        <div class="flex items-center justify-center gap-2 mb-6">
-            <span class="h-2 w-2 bg-green-500 rounded-full animate-online"></span>
-            <span class="text-green-400 text-xs font-bold uppercase tracking-widest">PimeFreelancere is Active & Taking Orders</span>
+    <section id="portfolio" class="py-24 px-10 bg-slate-50">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 text-slate-800 underline decoration-blue-600 decoration-4 underline-offset-8">Featured Work & Assets</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-200 group hover:border-blue-500 transition-colors">
+                    <img src="mysql-schema.png" alt="MySQL" class="w-full h-80 object-cover grayscale hover:grayscale-0 transition duration-700">
+                    <div class="p-8"><h4 class="font-bold text-2xl mb-2">Relational Database Design</h4><p class="text-slate-500 text-sm italic">MySQL / PostgreSQL Systems</p></div>
+                </div>
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-200 group hover:border-blue-500 transition-colors">
+                    <img src="tableau-insights.png" alt="Tableau" class="w-full h-80 object-cover grayscale hover:grayscale-0 transition duration-700">
+                    <div class="p-8"><h4 class="font-bold text-2xl mb-2">Advanced BI Visualization</h4><p class="text-slate-500 text-sm italic">Tableau / Excel Dashboards</p></div>
+                </div>
+            </div>
         </div>
-        <h2 class="text-3xl font-bold mb-8 italic">Let's build something data-driven.</h2>
-        <a href="mailto:your.email@example.com" class="text-xl font-medium hover:text-blue-400 transition underline decoration-blue-500 underline-offset-8">sharon.chebet@email.com</a>
-        <p class="mt-12 text-slate-500 text-sm italic">&copy; 2024 PimeFreelancere | Professional Business Intelligence</p>
+    </section>
+
+    <footer class="bg-slate-900 text-white pt-24 pb-12 px-10 border-t-8 border-blue-600">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 mb-20">
+            <div>
+                <h2 class="text-4xl font-bold mb-6">PimeFreelancere</h2>
+                <p class="text-slate-400 text-lg mb-8 leading-relaxed">Providing high-end analytical services for global organizations. Expert in MySQL, Tableau, and high-level statistical computing.</p>
+                <div class="flex gap-4">
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-linkedin-in text-sm"></i></a>
+                    <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition"><i class="fab fa-github text-sm"></i></a>
+                </div>
+            </div>
+            <div class="space-y-6">
+                <h3 class="text-xl font-bold text-blue-400">Contact Official</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-map-marker-alt mt-1 text-slate-500"></i>
+                        <div><p class="font-bold">Headquarters</p><p class="text-slate-400 text-sm leading-6">3326 Kenyatta Street, Wabwire House,<br>No. 32 Nairobi, Kenya</p></div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-phone mt-1 text-slate-500"></i>
+                        <div><p class="font-bold">Phone Support</p><a href="tel:+254794489623" class="text-blue-400 text-sm">+254 794 489 623</a></div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-envelope mt-1 text-slate-500"></i>
+                        <div><p class="font-bold">Business Email</p><a href="mailto:primefreelers582@gmail.com" class="text-blue-400 text-sm">primefreelers582@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center pt-12 border-t border-white/10 text-slate-600 text-[10px] uppercase tracking-widest">
+            &copy; 2024 PimeFreelancere | Authorized Data Consultancy Nairobi
+        </div>
     </footer>
 
 </body>
